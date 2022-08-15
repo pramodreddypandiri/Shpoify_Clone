@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopify</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                shopifywheat:'#FBF7ED',
+                buttongreen:'#008060',
+                sgreen:'#004C3E'
+
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="container mx-auto">
+        <section class="section-one bg-shopifywheat">
+            <header class="header py-6 px-8 bg-shopifywheat">
+                <nav class="nav-bar flex flex-row justify-between items-center">
+                    <div class="nav-left flex">
+                        <div class="logo mr-16">
+                            <a class="logo" href="#">
+                                <p class="logo-text font-black">
+                                    Shopify 
+                                </p>
+                            </a>
+                        </div>
+                        <div class="hidden left-links lg:flex space-x-8 ">
+                            <a href="#" class="left-link font-semibold">
+                                Start <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <a href="#" class="left-link font-semibold">
+                                Sell <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <a href="#" class="left-link font-semibold">
+                                Market <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <a href="#" class="left-link font-semibold">
+                                Manage <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden right-links  lg:flex space-x-8 items-center">
+                        <a href="#" class="right-link font-semibold">
+                            Price 
+                        </a>
+                        <a href="#" class="right-link font-semibold">
+                            Learn <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <a href="#" class="right-link font-semibold">
+                        Login 
+                        </a>
+                        <a href="#" class="right-link bg-buttongreen py-2 px-3 text-white font-bold rounded-md">Try for Free</a>
+                    </div>
+                    <div class="mobile lg:hidden flex items-center">
+                        <a href="#" class="right-link font-semibold mr-7">
+                            Login 
+                        </a>
+                        <a  class="w-9 h-5 flex flex-col justify-between" href="#">
+                            <span class=" h-0.5 w-7 bar bg-black rounded-3xl"></span>
+                            <span class="h-0.5 w-7 bar bg-black rounded-3xl"></span>
+                            <span class="h-0.5 w-7 bar bg-black rounded-3xl"></span>
+                        </a>
+                    </div>
+
+                
+                </nav>
+            </header>
+            <section class="hero ">
+                <section class="text-gray-600 body-font flex flex-col lg:flex-row">
+                    <div class="container mx-auto flex px-5 py-16 md:py-24 md:flex-row flex-col items-center">
+                      <div class=" md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start">
+                        <h1 class="title-font md:leading-normal md:text-5xl text-3xl mb-4 font-medium md:font-bold text-sgreen">The easiest way to sell online in India</h1>
+                        <p class="mb-8 leading-relaxed">Try one of the most powerful platforms on the market for free. No technical knowledge needed.</p>
+                        <div class="flex flex-col lg:flex-row w-full  justify-start items-start gap-4 md:gap:2">
+                            <div class="relative   w-full lg:w-3/5   ">
+                              
+                              <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-sgreen focus:bg-transparent focus:border-buttongreen text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                            <button class="flex w-full lg:w-2/5 justify-center relative text-white bg-buttongreen border-0 py-2 px-7 focus:outline-none hover:bg-sgreen rounded text-lg">Try for Free</button>
+                          </div>
+                        <p class="text-sm mt-6 text-gray-500 mb-8 w-full">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+                        
+                      
+                    </div>
+                    <div class="hero-img lg:w-1/2 ">
+
+                    
+                      <img class="image" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/in-hero-product-small-0c64c4c1013fc8ac477cb5ff62bf5b56b2903aec697e6b708b90d3b65a09baf8.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/in-hero-product-large-bce22ad495460b9f4ecb3ba9ae001c159106992815d73339fd27436dd16dcf4c.jpg?quality=50 2x" alt="India product imagery with mobile view">
+                     </div>
+                    <!-- <img class="image" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/in-hero-product-small-0c64c4c1013fc8ac477cb5ff62bf5b56b2903aec697e6b708b90d3b65a09baf8.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/in-hero-product-large-bce22ad495460b9f4ecb3ba9ae001c159106992815d73339fd27436dd16dcf4c.jpg?quality=50 2x" alt="India product imagery with mobile view"> -->
+
+                  </section>
+
+            </section>
+        </section>
+    </div>
+    
+</body>
+</html>
