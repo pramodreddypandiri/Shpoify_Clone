@@ -17,7 +17,10 @@
                 buttongreen:'#008060',
                 sgreen:'#004C3E',
                 stwogreen:'#004C40',
-                iconcolor:'#C0F0D0'
+                iconcolor:'#C0F0D0',
+                logocolor:'#96BF47',
+                bodywhite:'#FFFFFF',
+                textgrey:'#6B7177'
 
               }
             }
@@ -30,26 +33,26 @@
             transition: 0.5s ease-out;
 
         }
-        nav{
+        /* nav{
             
             position: sticky;
             top: 0;
-        }
+        } */
         
     </style>
       
 </head>
 <body>
-    <div class=" bg-shopifywheat ">
-        <section class="container mx-auto section-one bg-shopifywheat">
-            <header class="header py-6 px-8 bg-shopifywheat  ">
-                <nav class="nav-bar flex flex-row justify-between items-center ">
+    <div class="mx-auto container ">
+        <section class=" section-one bg-shopifywheat sticky top-0">
+            <header class="container mx-auto header py-6 px-8 bg-shopifywheat   ">
+                <nav class="nav-bar flex flex-row justify-between items-center  ">
                     <div class="nav-left flex">
                         <div class="logo mr-16">
                             <a class="logo flex items-center " href="#">
                                 
-                                <i class="fa-brands fa-2x fa-shopify mr-2"></i>
-                                <p class="logo-text text-xl font-black">
+                                <i class="fa-brands text-logocolor fa-2x fa-shopify mr-1"></i>
+                                <p class="logo-text italic text-xl font-black">
                                     Shopify 
                                 </p>
                             </a>
@@ -95,7 +98,9 @@
                 
                 </nav>
             </header>
-            <section class="hero ">
+        </section>
+        <section class="one">    
+            <section class="hero bg-shopifywheat ">
                 <section class="section-hero text-gray-600 body-font flex flex-col lg:flex-row">
                     <div class="container mx-auto flex px-5 py-16 lg:py-18 lg:flex-row flex-col items-center">
                       <div class=" lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start">
@@ -123,115 +128,135 @@
 
             </section>
         </section>
-    </div>
-    <div class="section-two bg-stwogreen ">
-        <div class="container mx-auto section-two-content py-20 px-4">
-            <h1 class="section-tw-heading text-white text-4xl py-5">Bring your business online</h1>
-            <p class="py-3 text-white">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
-            <div class="section-two-sub text-white">
-                
-                Explore more examples <i class="text-white icon ml-1 fa-solid fa-arrow-right-long"></i>
-            </div>
-            <div class="photos flex   gap-4 w-full py-20">
-                <div class="photo ">
-                    <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/blue-tokai/home-example-large-5be147333b5b97176173c550d913fc54bc6e5c3c9e5ecfe9601df2a5a4e400b9.jpg?quality=50" alt="">
-                    <div class="photo-links py-3 text-white">
-                        <a class=" links " href="#">
-                            <h3>FOOD & DRINK</h3>
-                            <p>Blue Tokai</p>
-                        </a>
-                    </div>
+    
+        <div class="section-two bg-stwogreen ">
+            <div class="container mx-auto section-two-content py-20 px-4">
+                <h1 class="section-tw-heading text-white text-4xl py-5">Bring your business online</h1>
+                <p class="py-3 text-white">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
+                <div class="section-two-sub text-white">
+                    
+                    Explore more examples <i class="text-white icon ml-1 fa-solid fa-arrow-right-long"></i>
                 </div>
-                <div class="photo">
-                    <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/quirksmith/home-example-large-36a73df801b2c2edfcd0b16da1097e2927abeefe8f0c06423ea0a321bed4e73b.jpg?quality=50" alt="">
-
-                    <div class="photo-links py-3 text-white ">
-                        <a class="links " href="#">
-                            <h3>JEWELRY</h3>
-                            <p>Quiksmith</p>
-                        </a>
-                    </div>
-                </div>
-                <div class=" hidden md:block photo">
-                    <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/crossbeats/home-example-large-6a2289a4261faab784468910e7a1b4fef50354bf997446cac7ac85bbc5ec1959.jpg?quality=50" alt="">
-                    <div class="photo-links py-3 text-white ">
-                        <a class="links " href="#">
-                            <h3>ELECTRONICS</h3>
-                            <p>Crossbeats</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="hidden lg:block photo">
-                    <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/mcaffeine/home-example-large-75bdc7686a50198c0ae2134cb882293b96b5308386a8d7a42fbf8bd0f70f4750.jpg?quality=50" alt="">
-                    <div class="photo-links py-3 text-white ">
-                        <a class="links " href="#">
-                            <h3>BEAUTY</h3>
-                            <p>Mcaffeine</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="hidden xl:block photo">
-                    <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/bunaai/home-example-large-77e630ba8c116ad0d5a6f359951433dccb0e84b75ee7f23545fe2ff9b4921148.jpg?quality=50" alt="">
-                    <div class="photo-links py-3 text-white ">
-                        <a class="links " href="#">
-                            <h3>FASHION</h3>
-                            <p>Bunaai</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="features-div py-4">
-                <p class="text-white text-2xl">Take the best path forward</p>
-                <div class="wrapper flex flex-col lg:flex-row">
-                    <div class="features pt-10 flex flex-col xl:flex-row">
-                        <div class="feature flex flex-col space-y-6 py-5 mr-5 ">
-                        <!-- <img class="w-16" src="/globe-solid.svg" alt=" ">   -->
-                            <i class="text-iconcolor fa-4x fa-solid fa-globe"></i> 
-                            <h3 class="text-white font-bold ">Start an online business</h3>
-                            <p class="text-white ">Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
-                            
-
-
+                <div class="photos flex   gap-4 w-full py-20">
+                    <div class="photo ">
+                        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/blue-tokai/home-example-large-5be147333b5b97176173c550d913fc54bc6e5c3c9e5ecfe9601df2a5a4e400b9.jpg?quality=50" alt="">
+                        <div class="photo-links py-3 text-white">
+                            <a class=" links " href="#">
+                                <h3>FOOD & DRINK</h3>
+                                <p>Blue Tokai</p>
+                            </a>
                         </div>
-                        <div class="feature flex flex-col space-y-6 py-5 mr-5 ">
+                    </div>
+                    <div class="photo">
+                        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/quirksmith/home-example-large-36a73df801b2c2edfcd0b16da1097e2927abeefe8f0c06423ea0a321bed4e73b.jpg?quality=50" alt="">
+
+                        <div class="photo-links py-3 text-white ">
+                            <a class="links " href="#">
+                                <h3>JEWELRY</h3>
+                                <p>Quiksmith</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" hidden md:block photo">
+                        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/crossbeats/home-example-large-6a2289a4261faab784468910e7a1b4fef50354bf997446cac7ac85bbc5ec1959.jpg?quality=50" alt="">
+                        <div class="photo-links py-3 text-white ">
+                            <a class="links " href="#">
+                                <h3>ELECTRONICS</h3>
+                                <p>Crossbeats</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block photo">
+                        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/mcaffeine/home-example-large-75bdc7686a50198c0ae2134cb882293b96b5308386a8d7a42fbf8bd0f70f4750.jpg?quality=50" alt="">
+                        <div class="photo-links py-3 text-white ">
+                            <a class="links " href="#">
+                                <h3>BEAUTY</h3>
+                                <p>Mcaffeine</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden xl:block photo">
+                        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/bunaai/home-example-large-77e630ba8c116ad0d5a6f359951433dccb0e84b75ee7f23545fe2ff9b4921148.jpg?quality=50" alt="">
+                        <div class="photo-links py-3 text-white ">
+                            <a class="links " href="#">
+                                <h3>FASHION</h3>
+                                <p>Bunaai</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-div py-4">
+                    <p class="text-white text-2xl">Take the best path forward</p>
+                    <div class="wrapper flex flex-col lg:flex-row">
+                        <div class="features pt-10 flex flex-col xl:flex-row">
+                            <div class="feature flex flex-col space-y-6 py-5 mr-5 ">
                             <!-- <img class="w-16" src="/globe-solid.svg" alt=" ">   -->
-                            <i class="text-iconcolor fa-4x fa-solid fa-store"></i>
-                            <h3 class="text-white font-bold ">Start an online business</h3>
-                            <p class="text-white ">Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
-                            
-    
-    
+                                <i class="text-iconcolor fa-4x fa-solid fa-globe"></i> 
+                                <h3 class="text-white font-bold ">Start an online business</h3>
+                                <p class="text-white ">Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
+                                
+
+
+                            </div>
+                            <div class="feature flex flex-col space-y-6 py-5 mr-5 ">
+                                <!-- <img class="w-16" src="/globe-solid.svg" alt=" ">   -->
+                                <i class="text-iconcolor fa-4x fa-solid fa-store"></i>
+                                <h3 class="text-white font-bold ">Start an online business</h3>
+                                <p class="text-white ">Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
+                                
+        
+        
+                            </div>
+        
+
                         </div>
-    
-
-                    </div>
-                    <div class="features pt-10 flex flex-col xl:flex-row">
-                        <div class="feature flex flex-col space-y-6 py-5 mr-5 ">
-                        <!-- <img class="w-16" src="/globe-solid.svg" alt=" ">   -->
-                        <i class="text-iconcolor fa-4x fa-solid fa-repeat"></i>
-                        <h3 class="text-white font-bold ">Start an online business</h3>
-                        <p class="text-white ">Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
-                            
-
-
-                        </div>
-                        <div class="feature flex flex-col space-y-6 py-5 mr-5">
+                        <div class="features pt-10 flex flex-col xl:flex-row">
+                            <div class="feature flex flex-col space-y-6 py-5 mr-5 ">
                             <!-- <img class="w-16" src="/globe-solid.svg" alt=" ">   -->
-                            <i class="text-iconcolor fa-4x fa-solid fa-user-group"></i>
+                            <i class="text-iconcolor fa-4x fa-solid fa-repeat"></i>
                             <h3 class="text-white font-bold ">Start an online business</h3>
                             <p class="text-white ">Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
-                            
-    
-    
-                        </div>
-    
+                                
 
+
+                            </div>
+                            <div class="feature flex flex-col space-y-6 py-5 mr-5">
+                                <!-- <img class="w-16" src="/globe-solid.svg" alt=" ">   -->
+                                <i class="text-iconcolor fa-4x fa-solid fa-user-group"></i>
+                                <h3 class="text-white font-bold ">Start an online business</h3>
+                                <p class="text-white ">Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
+                                
+        
+        
+                            </div>
+        
+
+                        </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
+        <div class="section-three bg-bodywhite">
+            <div class=" container mx-auto flex flex-col w-4/5 lg:w-1/2 items-center py-14 three-content">
+                <h1 class="text-center text-3xl lg:text-4xl font-medim py-3">With you wherever you’re going</h1>
+                <p class="text-center text-textgrey py-3">One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.</p>
+            </div>
+        </div>
+        <div class="section-four">
+            <!-- <div class=" container mx-auto four flex flex-col">
+                <div class="four-left flex flex-col">
+                    <h1 class="section-tw-heading  text-4xl py-5">Bring your business online</h1>
+                    <p class="py-3 text-textgrey">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
+                    <div class="section-two-sub text-textgrey">
+                        
+                        Explore more examples <i class="text-buttongreen icon ml-1 fa-solid fa-arrow-right-long"></i>
+                    </div>
 
+                </div> -->
+            </div>
+        </div>
     </div>
     
 </body>
